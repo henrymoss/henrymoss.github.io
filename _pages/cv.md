@@ -23,24 +23,24 @@ Internships and Academic Visits
 ======
 * Winter 2020: Visiting researcher
   * School of Computing and Information Systems, University of Melbourne
-  * Derived Bayesian optimisation for sequence design under syntactic constraints.
-  * Supervised by Dr. Daniel Beck. 
+  * Derived Bayesian optimisation for sequence design under syntactic constraints
+  * Supervised by Dr. Daniel Beck.
 
 * Summer 2020: Amazon Alexa Internship
   * Amazon Research Cambridge
-  * Used Bayesian optimisation to fine-tune neural systems to synthesise new voices with limited data.
-  * Supervised by Dr. Roberto Barra-Chicote and Dr. Javier Gonzalez.
+  * Used Bayesian optimisation to fine-tune neural systems to synthesise new voices with limited data
+  * Supervised by Dr. Roberto Barra-Chicote and Dr. Javier Gonzalez
 
 * Summer 2016: Research Internship
   * Wellcome Sanger Trust, Cambridge
-  * Designed a system to automatically flag promising compounds during image-based drug screening.
-  * Supervised by Dr. Leopold Parts.
+  * Designed a system to automatically flag promising compounds during image-based drug screening
+  * Supervised by Dr. Leopold Parts
 
   
 Prizes
 ======
-* Nick Smith prize: Best second-year Statistics PhD student at Lancaster University.
-* Area chair favourite: Nomiated for overall best paper at COLING 2018.
+* Nick Smith prize: Award for Excellence in PhD Statistics Research, Lancaster University
+* Area chair favourite: Nominated for overall best paper, COLING 2018
 
 
 
