@@ -9,51 +9,49 @@ redirect_from:
 
 {% include base_path %}
 
+
+[Download full CV here](http://henrymoss.github.io/files/CV.pdf)
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* MA (Hons) in Mathematics, Emmanuel College, University of Cambridge, 2016
+* MRes in Statistics and Operational Research, Lancaster University, 2017
+* PhD in Machine Learning and Statistics, Lancaster University, 2020 (expected)
 
-Work experience
+Internships and Academic Visits
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Winter 2020: Visiting researcher
+  * School of Computing and Information Systems, University of Melbourne
+  * Derived Bayesian optimisation for sequence design under syntactic constraints.
+  * Supervised by Dr. Daniel Beck. 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2020: Amazon Alexa Internship
+  * Amazon Research Cambridge
+  * Used Bayesian optimisation to fine-tune neural systems to synthesise new voices with limited data.
+  * Supervised by Dr. Roberto Barra-Chicote and Dr. Javier Gonzalez.
+
+* Summer 2016: Research Internship
+  * Wellcome Sanger Trust, Cambridge
+  * Designed a system to automatically flag promising compounds during image-based drug screening.
+  * Supervised by Dr. Leopold Parts.
+
   
-Skills
+Prizes
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Nick Smith prize: Best second-year Statistics PhD student at Lancaster University.
+* Area chair favourite: Nomiated for overall best paper at COLING 2018.
+
+
+
 
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+
+
+  [a link](https://github.com/user/repo/blob/branch/other_file.md)
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
