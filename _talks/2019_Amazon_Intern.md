@@ -1,9 +1,8 @@
 ---
-title: "Tutorial 1 on Relevant Topic in Your Field"
+title: "Rapid Speaker Adaptation with Bayesian Optimisation"
 collection: talks
-type: "Tutorial"
-permalink: /talks/2013-03-01-tutorial-1
-venue: "UC-Berkeley Institute for Testing Science"
-date: 2013-03-01
-location: "Berkeley CA, USA"
+type: "Poster"
+venue: "Amazon Intern Colloquium"
+date: 2019-10-01
+location: "Amazon Research, Cambridge, UK"
 ---

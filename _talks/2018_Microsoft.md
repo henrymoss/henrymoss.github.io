@@ -1,9 +1,8 @@
 ---
-title: "Tutorial 1 on Relevant Topic in Your Field"
+title: "Using J-K-fold Cross Validation to Reduce Variance when Tuning NLP Models"
 collection: talks
-type: "Tutorial"
-permalink: /talks/2013-03-01-tutorial-1
-venue: "UC-Berkeley Institute for Testing Science"
-date: 2013-03-01
-location: "Berkeley CA, USA"
+type: "Poster"
+venue: "Microsoft AI Summer School"
+date: 2018-06-01
+location: "Microsoft Research, Cambridge, UK"
 ---

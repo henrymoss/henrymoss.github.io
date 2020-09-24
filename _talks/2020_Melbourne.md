@@ -1,9 +1,8 @@
 ---
-title: "Tutorial 1 on Relevant Topic in Your Field"
+title: "BOFFIN TTS: Few-shot Speaker Adaptation by Bayesian Optimisation"
 collection: talks
-type: "Tutorial"
-permalink: /talks/2013-03-01-tutorial-1
-venue: "UC-Berkeley Institute for Testing Science"
-date: 2013-03-01
-location: "Berkeley CA, USA"
+type: "Talk"
+venue: "Visiting Seminar"
+date: 2020-03-01
+location: "University of Melbourne, Australia"
 ---

@@ -1,9 +1,8 @@
 ---
-title: "Tutorial 1 on Relevant Topic in Your Field"
+title: "Instabilities in NLP models"
 collection: talks
-type: "Tutorial"
-permalink: /talks/2013-03-01-tutorial-1
-venue: "UC-Berkeley Institute for Testing Science"
-date: 2013-03-01
-location: "Berkeley CA, USA"
+type: "Poster"
+venue: "UCREL Summer School in Corpus-based NLP"
+date: 2017-10-01
+location: "Lancaster University, UK"
 ---
