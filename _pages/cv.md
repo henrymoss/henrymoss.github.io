@@ -14,9 +14,10 @@ redirect_from:
 
 Education
 ======
-* MA (Hons) in Mathematics, Emmanuel College, University of Cambridge, 2016
-* MRes in Statistics and Operational Research, Lancaster University, 2017
 * PhD in Machine Learning and Statistics, Lancaster University, 2020 (expected)
+* MRes in Statistics and Operational Research, Lancaster University, 2017
+* MA (Hons) in Mathematics, Emmanuel College, University of Cambridge, 2016
+
 
 Internships and Academic Visits
 ======
