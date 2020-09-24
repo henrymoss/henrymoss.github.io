@@ -10,7 +10,7 @@ redirect_from:
 
 I am a final year PhD candidate at Lancaster University under the supervision of Prof. David Leslie and Dr. Paul Rayson. My thesis develops information-theoretical Bayesian Optimisation for applications inspired by natural language processing. 
 
-My research interests lie at the intersection of Statistics and Machine Learning, focusing mainly on Bayesian optimization. I leverage information-theoretic arguments to provide efficient and reliable optimisation for problems inspired by science and for hyper-parameter tuning tasks. My favorite application area is natural language processing (NLP), where state-of-the-art systems pose particularly interesting tuning problems, as they can take days (if not weeks!) to train. I have practical experience in applying Bayesian optimisation to optimise real machine learning systems, including Amazon Alexa's text-to-speech pipeline, as detailed in publications at ICASSP and various Natural Language Processing conferences. 
+I leverage information-theoretic arguments to provide efficient and reliable optimisation for problems inspired by science and for hyper-parameter tuning tasks. My favorite application area is natural language processing (NLP), where state-of-the-art systems pose particularly interesting tuning problems, as they can take days (if not weeks!) to train. I have applied Bayesian optimisation to real machine learning systems, including Amazon Alexa's text-to-speech pipeline, as detailed in publications at various Natural Language Processing conferences. 
 
 Recently, I have been developing BO for discrete structures, such as sequences, strings and trees, with a particular focus on applications in genomic and molecule design.  
 
