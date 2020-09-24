@@ -43,15 +43,25 @@ Prizes
 
 
 
-
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
+Computing Skills
+======
+* Python
+* Tensorflow
+* PyTorch
+* GPflow
+* Git
+* Emukit (contributor)
+* GPy
+* GPyOpt
+* Cython
+* MXNEet
+* R
+* C
 
-
-  [a link](https://github.com/user/repo/blob/branch/other_file.md)
-  
 
