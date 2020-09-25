@@ -16,7 +16,7 @@ Recently, I have been developing BO for discrete structures, such as sequences, 
 
 Primary Research Interests
 ======
-1. Bayesian optimisation: information-theory; batch design; discrete structures; multi-fidelity design.
+1. Bayesian optimisation: information-theory; batch design; multi-fidelity design.
 1. Gaussian processes: multi-fidelity models; string kernels.
 1. Design of scientific experiments: gene design; molecule design.
 1. Natural Language Processing: AutoML; hyper-parameter tuning; text-to-speech.
