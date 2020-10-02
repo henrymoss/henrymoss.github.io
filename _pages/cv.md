@@ -58,6 +58,8 @@ Computing Skills
 * PyTorch
 * GPflow
 * Git
+* BOSS (author)
+* FlowMo (coauthor)
 * Emukit (contributor)
 * GPy
 * GPyOpt
