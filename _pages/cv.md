@@ -40,6 +40,7 @@ Internships and Academic Visits
 Prizes
 ======
 * Spotlight paper: Top 3% of submitted papers, NeurIPS 2020
+* Contributed talk: Top 5% of submitted papers, NeurIPS:ML4 Molecules Workshop
 * Nick Smith prize: Award for Excellence in PhD Statistics Research, Lancaster University
 * Area chair favourite: Nominated for overall best paper, COLING 2018
 
