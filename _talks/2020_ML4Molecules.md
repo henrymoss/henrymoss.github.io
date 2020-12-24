@@ -1,5 +1,5 @@
 ---
-title: "BOSS: Bayesian Optimisation over String Spaces"
+title: "Gaussian Process Molecule Property Prediction with FlowMO"
 collection: talks
 type: "Contributed talk and poster"
 venue: "NeurIPS: ML4 Molecules Workshop"
