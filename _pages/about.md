@@ -10,7 +10,7 @@ redirect_from:
 
 I am a Senior Machine Learning Researcher at Secondmind (formerly PROWLER.io). I leverage information-theoretic arguments to provide efficient and reliable Bayesian optimisation for problems inspired by science and the automotive industry.
 
-During my PhD, I developed information-theoretical Bayesian Optimisation routines for real-world problems, including batch, multi-fidelity and discrete structure design. My primary applications were natural language processing, genomics and molecular search. In addition, I have applied Bayesian optimisation to real machine learning systems, including Amazon Alexa's text-to-speech pipeline, as detailed in publications at various Natural Language Processing conferences. 
+During my PhD [Download thesis here](http://henrymoss.github.io/files/Thesis.pdf), I developed information-theoretical Bayesian Optimisation routines for real-world problems, including batch, multi-fidelity and discrete structure design. My primary applications were natural language processing, genomics and molecular search. In addition, I have applied Bayesian optimisation to real machine learning systems, including Amazon Alexa's text-to-speech pipeline, as detailed in publications at various Natural Language Processing conferences. 
  
 
 Primary Research Interests
