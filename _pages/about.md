@@ -8,11 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a final year PhD candidate at Lancaster University under the supervision of Prof. David Leslie and Dr. Paul Rayson. My thesis develops information-theoretical Bayesian Optimisation for applications inspired by natural language processing. 
+I am a Senior Machine Learning Researcher at Secondmind (formerly PROWLER.io). I leverage information-theoretic arguments to provide efficient and reliable Bayesian optimisation for problems inspired by science and the automotive industry.
 
-I leverage information-theoretic arguments to provide efficient and reliable optimisation for problems inspired by science and for hyper-parameter tuning tasks. My favorite application area is natural language processing (NLP), where state-of-the-art systems pose particularly interesting tuning problems, as they can take days (if not weeks!) to train. I have applied Bayesian optimisation to real machine learning systems, including Amazon Alexa's text-to-speech pipeline, as detailed in publications at various Natural Language Processing conferences. 
-
-Recently, I have been developing BO for discrete structures, such as sequences, strings and trees, with a particular focus on applications in genomic and molecule design.  
+During my PhD, I developed information-theoretical Bayesian Optimisation routines for real-world problems, including batch, multi-fidelity and discrete structure design. My primary applications were natural language processing, genomics and molecular search. In addition, I have applied Bayesian optimisation to real machine learning systems, including Amazon Alexa's text-to-speech pipeline, as detailed in publications at various Natural Language Processing conferences. 
+ 
 
 Primary Research Interests
 ======

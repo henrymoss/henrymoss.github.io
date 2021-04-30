@@ -12,9 +12,14 @@ redirect_from:
 
 [Download full CV here](http://henrymoss.github.io/files/CV.pdf)
 
+Current position
+======
+* Senior Machine Learning Researcher at Secondmin (formerly PROWLER.io), Cambridge
+
+
 Education
 ======
-* PhD in Machine Learning and Statistics, Lancaster University, 2020 (expected)
+* PhD in Machine Learning and Statistics, Lancaster University, 2020 [Download thesis here](http://henrymoss.github.io/files/Thesis.pdf)
 * MRes in Statistics and Operational Research, Lancaster University, 2017
 * MA (Hons) in Mathematics, Emmanuel College, University of Cambridge, 2016
 
@@ -59,6 +64,7 @@ Computing Skills
 * PyTorch
 * GPflow
 * Git
+* Trieste (maintainer)
 * BOSS (author)
 * FlowMo (coauthor)
 * Emukit (contributor)
