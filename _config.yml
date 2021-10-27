@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "Henry Moss"
 title_separator          : "-"
 name                     : &name "Henry Moss"
-description              : &description "Final year PhD student at Lancaster University, studying Bayesian Optimisation"
+description              : &description "Senior Machine Learning Researcher at Secondmind."
 url                      : https://henrymoss.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "henrymoss/henrymoss.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Henry Moss"
   avatar           : "henry.jpeg"
-  bio              : "Final year PhD student in Statistical Machine Learning at Lancaster Univeristy, UK."
+  bio              : "Senior Machine Learning Researcher at Secondmind, UK."
   location         :
   employer         :
   pubmed           : 
