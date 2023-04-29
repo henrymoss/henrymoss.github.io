@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "Henry Moss"
 title_separator          : "-"
 name                     : &name "Henry Moss"
-description              : &description "Senior Machine Learning Researcher at Secondmind."
+description              : &description "Early Career Fellow at the University of Cambridge."
 url                      : https://henrymoss.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "henrymoss/henrymoss.github.io"
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &henrymossmoss
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Henry Moss"
   avatar           : "henry.jpeg"
-  bio              : "Senior Machine Learning Researcher at Secondmind, UK."
+  bio              : "Early Career Fellow at the University of Cambridge, UK."
   location         :
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=m00SvLMAAAAJ&hl=en"
-  email            : "henry.moss@secondmind.ai"
+  email            : "h.moss@damtp.ac.uk"
   researchgate     :
   uri              :
   bitbucket        :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "@Henrymossmoss"
+  twitter          :
   vine             :
   weibo            :
   xing             :

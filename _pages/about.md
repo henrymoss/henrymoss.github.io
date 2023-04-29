@@ -8,14 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Scientist at Secondmind (formerly PROWLER.io). I leverage information-theoretic arguments to provide efficient, reliable and scalable Bayesian optimisation for problems inspired by science and the automotive industry.
+I am an Early Career Advanced Fellow in the Department of Applied Mathematics and Theoretical Physics at the University of Cambridge.
+
+Previously, I spent two years as a Research Scientist at Secondmind (formerly PROWLER.io). I leveraged information-theoretic arguments to provide efficient, reliable and scalable Bayesian optimisation for problems inspired by science and the automotive industry.
 
 During my PhD, I developed information-theoretical Bayesian Optimisation routines for real-world problems, including batch, multi-fidelity and discrete structure design. My primary applications were natural language processing, genomics and molecular search. In addition, I applied Bayesian optimisation to real machine learning systems, including Amazon Alexa's text-to-speech pipeline.
 
-Primary Research Interests
+Research Interests
 ======
-1. Bayesian optimisation: information-theory; batch design; multi-fidelity design.
-1. Gaussian processes: scalable inference; multi-fidelity models; string kernels.
-1. Design of scientific experiments: gene design; molecule design.
-1. Natural Language Processing: AutoML; hyper-parameter tuning; text-to-speech.
+1. Scalable Bayesian models to help scientists better understand the world around us.
+1. Active learning and Bayesian optimisation to accelerate the design of new technologies
+1. Machine learning for climate science.
+1. Molecular search and gene design.
 
