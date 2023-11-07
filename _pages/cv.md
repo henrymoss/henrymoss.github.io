@@ -9,5 +9,3 @@ redirect_from:
 
 {% include base_path %}
 
-
-[Download full CV here](http://henrymoss.github.io/files/CV.pdf)
