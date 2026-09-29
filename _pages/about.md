@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Lecturer (equiv. Assistant Professor) in Mathematical AI at Lancaster University and an Early Career Advanced Fellow in the Department of Applied Mathematics and Theoretical Physics at the University of Cambridge.
+I am a Lecturer (equiv. Assistant Professor) in Mathematical AI at Lancaster University.
 
 
 Research Interests
