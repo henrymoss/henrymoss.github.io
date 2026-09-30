@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "Henry Moss"
 title_separator          : "-"
 name                     : &name "Henry Moss"
-description              : &description "Lecturer (equiv. Assistant Professor) in Mathematical AI at Lancaster University and Early Career Advanced Fellow at the University of Cambridge."
+description              : &description "Reader (equiv. Associate Professor) in Mathematical AI at Lancaster University."
 url                      : https://henrymoss.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "henrymoss/henrymoss.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Henry Moss"
   avatar           : "henry.jpeg"
-  bio              : "Lecturer (Equiv Assistant professor) at Lancaster Unviversity, UK."
+  bio              : "Reader (Equiv Associate professor) at Lancaster Unviversity, UK."
   location         :
   employer         :
   pubmed           : 
