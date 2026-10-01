@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Lecturer (equiv. Assistant Professor) in Mathematical AI at Lancaster University.
+I am a Reader (equiv. Associate Professor) in Mathematical AI at Lancaster University.
 
 
 Research Interests
@@ -16,5 +16,4 @@ Research Interests
 1. Scalable Bayesian models to help scientists better understand the world around us.
 1. Active learning and Bayesian optimisation to accelerate the design of new technologies
 1. Machine learning for calibrating scientific models.
-1. Molecular search and gene design.
 
