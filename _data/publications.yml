@@ -32,6 +32,16 @@
 
 
 
+- title: "A Critical look at Power Sampling when Test-time Sharpening LLMs"
+  authors: "Talwar, Nemeth, Moss"
+  year: 2026
+  thumbnail: /images/figures/sharpening.png
+  pdf: /files/papers/sharpening.pdf
+  under_review: true
+
+
+
+
 
 
 
@@ -79,6 +89,8 @@
   pdf: /files/papers/O3.pdf
   under_review: true
   arxiv: https://arxiv.org/abs/2509.23800
+
+
 
 
 
