@@ -304,6 +304,7 @@ a.anchor {
    font-size: 13px;
    line-height: 1.5;
    color: var(--ink-soft);
+   text-align: center;
 }
 /* Paper links under the featured figure, one per line so long titles don't
    collide on a narrow screen. */
