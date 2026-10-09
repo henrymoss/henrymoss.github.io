@@ -33,12 +33,6 @@ members:
     topic: "Automatic Bayesian climate science: discovering governing equations (AI4ER)"
     image: /images/people/thomas-cowperthwaite.jpg
 
-  - name: "Michael Dodds"
-    role: "PhD student"
-    where: "University of Cambridge"
-    topic: "ML-guided design for high-throughput optimisation of biologics (AstraZeneca)"
-    image: /images/people/michael-dodds.jpg
-
   - name: "Gabriel Diaz-Aylwin"
     role: "PhD student"
     where: "Lancaster University"
@@ -51,11 +45,24 @@ members:
     topic: "Guiding scientific discovery with generative AI (G Research)"
     image: /images/people/abiel-talwar.jpg
 
+  - name: "Michael Dodds"
+    role: "PhD student"
+    where: "University of Cambridge"
+    topic: "ML-guided design for high-throughput optimisation of biologics (AstraZeneca)"
+    image: /images/people/michael-dodds.jpg
+
+
   - name: "Dawid Lipinski"
     role: "PhD student"
     where: "Lancaster University"
     topic: "Equivariant generative models for materials microstructures"
     image: /images/people/dawid-lipinski.jpg
+
+  - name: "Sam Willis"
+    role: "PhD student"
+    where: "University of Cambridge"
+    topic: "GenAI for aerospace engineering"
+    image: /images/people/sam-willis.jpg
 
   - name: "Ranvir Narang"
     role: "PhD student"
