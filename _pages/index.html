@@ -32,10 +32,9 @@ redirect_from:
 
             <p>In MADD, we work with industry partners to remove innovation bottlenecks in areas such as drug
             discovery and sustainable engineering, where experiments are technically and financially
-            costly. Much of our current work develops <strong>Gaussian process flows</strong>: using
-            generative modelling to condition Gaussian processes and other stochastic processes on
-            observations that classical conditioning cannot handle. We also work on Bayesian
-            optimisation, active learning and experimental design.</p>
+            costly. Much of our current work develops <strong>Gaussian process flows</strong>: a general
+            mechanism for incorporating the full richness of real-world knowledge into machine learning.
+            We also work on Bayesian optimisation, active learning and experimental design.</p>
 
 
 
@@ -71,12 +70,6 @@ redirect_from:
       <div class="announcementFoot">Interested? {% include email.html text="Get in touch" %}.</div>
    </div>
 
-   <figure class="demo">
-      <img src="{{ '/images/bo-loop.svg' | relative_url }}" width="760" height="230"
-           alt="A Bayesian optimisation run: a Gaussian process posterior over an unknown
-                function, its uncertainty band collapsing as each new measurement is chosen.">
-   </figure>
-
    <a class="anchor" id="team"></a>
    <div class="box">
       <div class="title">Team</div>
@@ -89,6 +82,33 @@ redirect_from:
             {%- for p in site.data.people.lead %}{% include person-card.html person=p %}{%- endfor %}
             {%- for p in site.data.people.members %}{% include person-card.html person=p %}{%- endfor %}
             {%- for p in site.data.people.visitors %}{% include person-card.html person=p %}{%- endfor %}
+         </div>
+      </div>
+   </div>
+
+   <a class="anchor" id="research"></a>
+   <div class="box">
+      <div class="title">Featured Research: Gaussian Process Flows</div>
+      <div class="content">
+         <figure class="demo">
+            <img src="{{ '/images/gp-flow.svg' | relative_url }}" width="760" height="250"
+                 alt="A Gaussian process flow: white noise gradually becoming smooth sample
+                      paths that pass through a set of fixed observations, shown in red.">
+         </figure>
+         <p class="demoNote">Sampling a Gaussian process by flowing white noise into a predictive
+         distribution. Because the samples appear gradually, we can steer them as they form. This
+         gives a general mechanism for incorporating the full richness of real-world knowledge as
+         conditioning information, opening a new frontier for the probabilistic modelling of
+         real-world problems.</p>
+         <div class="featuredLinks">
+            <a href="{{ '/files/papers/conditioning-gps.pdf' | relative_url }}">Conditioning Gaussian Processes on Almost Anything</a>
+            <a href="{{ '/files/papers/latentflow.pdf' | relative_url }}">LatentFlow: A General Framework for Conditioning Stochastic Processes</a>
+            {%- comment -%}
+            Careful: this paper's PDF is scalable_gp_flows.pdf, while the file
+            named flowgp_follow_up… is the separate "Scalable Gaussian Process
+            Flows" workshop paper. The names are the wrong way round.
+            {%- endcomment %}
+            <a href="{{ '/files/papers/scalable_gp_flows.pdf' | relative_url }}">Feature Space Adaptation for Effortless Gaussian Process Flows</a>
          </div>
       </div>
    </div>

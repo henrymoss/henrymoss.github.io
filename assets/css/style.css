@@ -289,6 +289,27 @@ a.anchor {
    width: 100%;
    height: auto;
 }
+.demoNote {
+   max-width: 760px;
+   margin: 0 auto;
+   font-size: 13px;
+   line-height: 1.5;
+   color: var(--ink-soft);
+}
+/* Paper links under the featured figure, one per line so long titles don't
+   collide on a narrow screen. */
+.featuredLinks {
+   max-width: 760px;
+   margin: 12px auto 0 auto;
+   padding-top: 10px;
+   border-top: 1px solid var(--panel-edge);
+}
+.featuredLinks a {
+   display: block;
+   font-size: 13px;
+   font-weight: bold;
+   padding: 3px 0;
+}
 
 /* ==========================================================================
    Publication / project thumbnail grid

@@ -70,7 +70,16 @@
   pdf: /files/papers/latentflow.pdf
   arxiv: https://arxiv.org/abs/2607.12922
   under_review: true
-  arxiv: https://arxiv.org/abs/2610.11549
+
+
+- title: "Sample-Efficient Optimisation over the Outputs of Generative Models"
+  authors: "Willis, Duckworth, Simons, Kalisz,..., Moss, Bodin"
+  year: 2026
+  thumbnail: /images/figures/O3.png
+  pdf: /files/papers/O3.pdf
+  under_review: true
+  arxiv: https://arxiv.org/abs/2509.23800
+
 
 
 
