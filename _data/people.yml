@@ -67,13 +67,13 @@ members:
 # Visiting researchers — shown in their own box on the page.
 visitors:
   - name: "Thomas Christie"
-    role: "Visiting PhD student"
+    role: "Visiting scholar"
     where: "University of Tübingen"
     topic: "Guidance in discrete diffusion models; benchmarking high-dimensional BO"
     image: /images/people/thomas-christie.jpg
 
   - name: "Colin Doumont"
-    role: "Visiting PhD student"
+    role: "Visiting scholar"
     where: "University of Tübingen"
     topic: "Kernels and linear models for high-dimensional Bayesian optimisation"
     image: /images/people/colin-doumont.jpg
