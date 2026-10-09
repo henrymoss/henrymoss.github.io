@@ -48,19 +48,19 @@ members:
   - name: "Abiel Talwar"
     role: "PhD student"
     where: "Lancaster University"
-    topic: "Guiding scientific discovery with generative AI"
+    topic: "Guiding scientific discovery with generative AI (G Research)"
     image: /images/people/abiel-talwar.jpg
 
   - name: "Dawid Lipinski"
     role: "PhD student"
     where: "Lancaster University"
-    topic: ""
+    topic: "Equivariant generative models for materials microstructures"
     image: /images/people/dawid-lipinski.jpg
 
   - name: "Ranvir Narang"
     role: "PhD student"
     where: "Lancaster University"
-    topic: ""
+    topic: "Gaussian process flows for physics-informed modelling"
     image: /images/people/ranvir-narang.jpg
 
 

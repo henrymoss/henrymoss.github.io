@@ -1,0 +1,15 @@
+{%- comment -%}
+One card in a people grid. Call as:
+   {% include person-card.html person=p %}
+`where` and `topic` are both optional — a card with neither still renders, it
+just stops after the role. Leave `topic` blank in _data/people.yml rather than
+inventing one; an empty string prints nothing.
+{%- endcomment -%}
+{%- assign p = include.person -%}
+<div class="personBlock">
+   <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
+   <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+   <span class="personRole">{{ p.role }}</span>
+   {%- if p.where != blank %}<span class="personWhere">{{ p.where }}</span>{% endif %}
+   {%- if p.topic != blank %}<span class="personTopic">{{ p.topic }}</span>{% endif %}
+</div>

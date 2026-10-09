@@ -16,6 +16,10 @@ baseurl                  : ""
 repository               : "henrymoss/henrymoss.github.io"
 timezone                 : Europe/London
 
+# Link-preview card, used by any page that doesn't set `image` itself.
+# Regenerate with: python3 tools/gen_og.py
+og_image                 : /images/og-card.png
+
 author:
   name                   : "Henry Moss"
   role                   : "Reader in Mathematics and AI"

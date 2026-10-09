@@ -20,7 +20,6 @@ redirect_from:
 
       <div class="about box">
          <a class="anchor" id="about"></a>
-         <div class="title">About</div>
          <div class="content">
             <p>I am <a href="{{ site.author.lancaster }}">Henry Moss</a>, an Associate Professor (UK Reader) in Mathematics and
             AI in the <a href="https://www.lancaster.ac.uk/maths/">School of Mathematical Sciences</a>
@@ -33,8 +32,10 @@ redirect_from:
 
             <p>In MADD, we work with industry partners to remove innovation bottlenecks in areas such as drug
             discovery and sustainable engineering, where experiments are technically and financially
-            costly. Our expertise is in probabilistic machine learning, generative modelling, Gaussian
-            processes, Bayesian optimisation, active learning and experimental design.</p>
+            costly. Much of our current work develops <strong>Gaussian process flows</strong>: using
+            generative modelling to condition Gaussian processes and other stochastic processes on
+            observations that classical conditioning cannot handle. We also work on Bayesian
+            optimisation, active learning and experimental design.</p>
 
 
 
@@ -70,6 +71,12 @@ redirect_from:
       <div class="announcementFoot">Interested? {% include email.html text="Get in touch" %}.</div>
    </div>
 
+   <figure class="demo">
+      <img src="{{ '/images/bo-loop.svg' | relative_url }}" width="760" height="230"
+           alt="A Bayesian optimisation run: a Gaussian process posterior over an unknown
+                function, its uncertainty band collapsing as each new measurement is chosen.">
+   </figure>
+
    <a class="anchor" id="publications"></a>
    <div class="box">
       <div class="title">Publications</div>
@@ -104,6 +111,10 @@ redirect_from:
          collapsed into one "and earlier" block, so the thin single-paper years
          don't each take a full-width rule. Papers keep their file order within
          that block, which is newest-first.
+
+         The collapsed block is labelled "(PhD)" because `cutoff` currently
+         falls just after the 2021 viva. Move the cutoff and that label needs
+         rewording with it.
          {%- endcomment -%}
          {%- assign cutoff = 2022 -%}
 
@@ -135,7 +146,7 @@ redirect_from:
          {%- assign earlierBlocks = earlierBlocks | strip -%}
          {%- if earlierBlocks != "" -%}
          {%- assign earlierLabel = cutoff | minus: 1 %}
-         <div class="pubYear">{{ earlierLabel }} and earlier</div>
+         <div class="pubYear">{{ earlierLabel }} and earlier (PhD)</div>
          <div class="paperSet">{{ earlierBlocks }}</div>
          {%- endif -%}
       </div>
@@ -146,22 +157,8 @@ redirect_from:
       <div class="title">Team</div>
       <div class="content">
          <div class="peopleSet">
-            {%- for p in site.data.people.lead %}
-            <div class="personBlock">
-               <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
-               <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
-               <span class="personRole">{{ p.role }}</span>
-               {%- if p.where %}<span class="personWhere">{{ p.where }}</span>{% endif %}
-            </div>
-            {%- endfor %}
-            {%- for p in site.data.people.members %}
-            <div class="personBlock">
-               <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
-               <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
-               <span class="personRole">{{ p.role }}</span>
-               {%- if p.where %}<span class="personWhere">{{ p.where }}</span>{% endif %}
-            </div>
-            {%- endfor %}
+            {%- for p in site.data.people.lead %}{% include person-card.html person=p %}{%- endfor %}
+            {%- for p in site.data.people.members %}{% include person-card.html person=p %}{%- endfor %}
          </div>
       </div>
    </div>
@@ -171,14 +168,7 @@ redirect_from:
       <div class="title">Visitors</div>
       <div class="content">
          <div class="peopleSet">
-            {%- for p in site.data.people.visitors %}
-            <div class="personBlock">
-               <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
-               <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
-               <span class="personRole">{{ p.role }}</span>
-               {%- if p.where %}<span class="personWhere">{{ p.where }}</span>{% endif %}
-            </div>
-            {%- endfor %}
+            {%- for p in site.data.people.visitors %}{% include person-card.html person=p %}{%- endfor %}
          </div>
       </div>
    </div>

@@ -65,14 +65,24 @@ that person is happy for theirs to appear here.
 
 ## Images
 
-`tools/gen_assets.py` generates the initials cards and the favicon;
-`tools/gen_logo.py` generates the logo lockups and the header mark. Both write
-straight into `images/` and are safe to re-run:
+Three scripts generate the images that are not photographs. Each owns its own
+files — don't make two of them write the same one — and all are safe to re-run:
 
 ```bash
-python3 tools/gen_assets.py
-python3 tools/gen_logo.py
+python3 tools/gen_assets.py   # headshot crop, initials cards for new members
+python3 tools/gen_logo.py     # images/logo-header.svg, images/favicon.svg
+python3 tools/gen_og.py       # images/og-card.png, the link-preview card
 ```
+
+`logo-header.svg` is the animated hop-scotch mark in the header bar. It carries
+its own `<style>`, so it animates inside a plain `<img>` with no page CSS and
+no JavaScript, and holds still under `prefers-reduced-motion`. It is drawn
+light-on-dark for the navy bar.
+
+`og-card.png` is what Slack, LinkedIn and the rest show when the site is
+shared. It has to be a raster file — essentially no platform renders SVG there
+— so `gen_og.py` redraws the lockup with Pillow rather than reusing the SVG.
+`_config.yml` points `og_image` at it, and every page falls back to it.
 
 Replace any generated image with a real one by dropping a file into `images/`
 and updating the path that refers to it. Real photos and real figures are better

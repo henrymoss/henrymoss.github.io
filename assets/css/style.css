@@ -269,6 +269,20 @@ a.anchor {
    color: var(--ink-soft);
 }
 
+/* The Bayesian optimisation figure. The SVG flips its own frames and carries
+   its own reduced-motion rule, so it runs inside a plain <img>. The explicit
+   margin is load-bearing — <figure> ships with 40px side margins by default;
+   `auto` both clears those and centres the figure in the document. */
+.demo {
+   margin: 0 auto 30px auto;
+   max-width: 760px;
+}
+.demo img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
 /* ==========================================================================
    Publication / project thumbnail grid
    ========================================================================== */
@@ -324,7 +338,16 @@ a.anchor {
    border: 1px solid var(--panel-edge);
    box-sizing: border-box;
    overflow: hidden;
+   transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
 }
+/* Hovering anywhere on the tile lifts it and tints the title, so the whole
+   block reads as one target rather than just the words being clickable. */
+.paperBlock:hover .thumb {
+   border-color: var(--accent);
+   box-shadow: 0 5px 16px rgba(45, 30, 105, .20);
+   transform: translateY(-3px);
+}
+.paperBlock:hover .paperTitle a { color: var(--accent); }
 .paperBlock .thumb img {
    display: block;
    width: 100%;
@@ -437,6 +460,13 @@ a.anchor {
    font-size: 11px;
    line-height: 1.3;
 }
+.personBlock .personTopic {
+   display: block;
+   color: var(--ink-soft);
+   font-size: 11px;
+   line-height: 1.35;
+   padding-top: 4px;
+}
 
 /* ==========================================================================
    Generic prose pages
@@ -533,6 +563,14 @@ a.anchor {
    .paperSet { justify-content: center; }
    .box > .title { font-size: 20px; }
    .pageTitle { font-size: 26px; }
+}
+
+/* The header mark holds its own motion preference inside the SVG; this covers
+   the hover movement the stylesheet adds. */
+@media (prefers-reduced-motion: reduce) {
+   html { scroll-behavior: auto; }
+   .paperBlock .thumb { transition: border-color .15s ease, box-shadow .15s ease; }
+   .paperBlock:hover .thumb { transform: none; }
 }
 
 @media print {
