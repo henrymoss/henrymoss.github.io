@@ -31,7 +31,7 @@ redirect_from:
             Lancaster's centre for the mathematics of AI in real-world
             systems.</p>
 
-            <p>We work with industry partners to remove innovation bottlenecks in areas such as drug
+            <p>In MADD, we work with industry partners to remove innovation bottlenecks in areas such as drug
             discovery and sustainable engineering, where experiments are technically and financially
             costly. Our expertise is in probabilistic machine learning, generative modelling, Gaussian
             processes, Bayesian optimisation, active learning and experimental design.</p>
@@ -99,8 +99,17 @@ redirect_from:
          <div class="paperSet">{{ reviewBlocks }}</div>
          {%- endif -%}
 
+         {%- comment -%}
+         Years from `cutoff` onwards get a block each; everything older is
+         collapsed into one "and earlier" block, so the thin single-paper years
+         don't each take a full-width rule. Papers keep their file order within
+         that block, which is newest-first.
+         {%- endcomment -%}
+         {%- assign cutoff = 2022 -%}
+
          {%- assign years = site.data.publications | map: "year" | uniq | sort | reverse -%}
          {%- for y in years -%}
+            {%- if y >= cutoff -%}
             {%- capture yearBlocks -%}
                {%- for item in site.data.publications -%}
                   {%- unless item.under_review -%}
@@ -113,7 +122,22 @@ redirect_from:
          <div class="pubYear">{{ y }}</div>
          <div class="paperSet">{{ yearBlocks }}</div>
             {%- endif -%}
+            {%- endif -%}
          {%- endfor -%}
+
+         {%- capture earlierBlocks -%}
+            {%- for item in site.data.publications -%}
+               {%- unless item.under_review -%}
+                  {%- if item.year < cutoff -%}{%- include paper-block.html item=item -%}{%- endif -%}
+               {%- endunless -%}
+            {%- endfor -%}
+         {%- endcapture -%}
+         {%- assign earlierBlocks = earlierBlocks | strip -%}
+         {%- if earlierBlocks != "" -%}
+         {%- assign earlierLabel = cutoff | minus: 1 %}
+         <div class="pubYear">{{ earlierLabel }} and earlier</div>
+         <div class="paperSet">{{ earlierBlocks }}</div>
+         {%- endif -%}
       </div>
    </div>
 

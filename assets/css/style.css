@@ -7,10 +7,10 @@
    /* MARS brand palette, sampled from the MARS identity artwork:
       lime #d1f43d, violet #6472e2, navy #1a1a34, steel blue #8ab0c9.
       The violet is deepened slightly so it carries as link text on white. */
-   --accent:        #5245c8;  /* MARS violet - links, box titles           */
+   --accent:        #5245c8;  /* violet - links, box titles                */
    --accent-hover:  #7b6ae8;  /* lighter violet, for hover                 */
-   --navy:          #1a1a34;  /* MARS navy - header bar                    */
-   --accent-light:  #d1f43d;  /* MARS lime - rules and fills only          */
+   --navy:          #2d1e69;  /* MADD indigo - header bar, matches the mark */
+   --accent-light:  #ffd23f;  /* MADD yellow - rules and fills only        */
    --flag:          #d6212b;  /* spotlights / orals - loud on purpose      */
    --flag-strong:   #a8121a;  /* prizes                                    */
    --accent-pale:   #ecebf8;  /* violet wash - announcement strip          */
@@ -122,10 +122,12 @@ a.anchor {
 .header .name:link,
 .header .name:visited { color: #ffffff; }
 .header .name:hover   { color: var(--accent-light); }
+/* The hop-scotch mark. The SVG carries its own animation and its own
+   reduced-motion rule, so it plays once on load inside a plain <img>. */
 .header .logo {
    flex: 0 0 auto;
-   width: 40px;
-   height: 40px;
+   width: auto;
+   height: 42px;
    display: block;
 }
 
@@ -503,6 +505,7 @@ a.anchor {
 
 @media screen and (max-width: 1020px) {
    .header .name { font-size: 20px; }
+   .header .logo { height: 36px; }
    .header .navigation a { padding: 7px 8px; font-size: 12px; }
 }
 
@@ -523,7 +526,7 @@ a.anchor {
    :root { --header-h: 74px; }
    .document { padding: 0 14px; }
    .header .name { font-size: 17px; white-space: normal; line-height: 1.15; gap: 8px; }
-   .header .logo { width: 30px; height: 30px; }
+   .header .logo { height: 28px; }
    .frontPage .intro { gap: 14px; }
    .frontPage .headshot { flex: 0 0 100%; }
    .frontPage .about { flex: 1 1 100%; min-width: 0; }
