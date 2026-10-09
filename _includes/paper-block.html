@@ -1,0 +1,38 @@
+{%- comment -%}
+Thumbnail block for one publication. Call as:
+   {% include paper-block.html item=pub %}
+The title and thumbnail link to the PDF, or failing that the arXiv page.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- assign target = '' -%}
+{%- if item.pdf -%}
+   {%- assign target = item.pdf | relative_url -%}
+{%- elsif item.arxiv -%}
+   {%- assign target = item.arxiv -%}
+{%- elsif item.link -%}
+   {%- assign target = item.link -%}
+{%- endif -%}
+<div class="paperBlock">
+   <span class="thumb">
+      {%- if target != '' %}<a href="{{ target }}">{% endif -%}
+      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title | escape }}" loading="lazy">
+      {%- if target != '' %}</a>{% endif -%}
+   </span>
+   <span class="paperTitle">{% if target != '' %}<a href="{{ target }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</span>
+   {%- comment -%} Henry's own name is bolded in every author list. {%- endcomment -%}
+   <span class="authorList">
+      {%- assign names = item.authors | split: ", " -%}
+      {%- for name in names -%}
+         {%- if forloop.index0 > 0 %}, {% endif -%}
+         {%- if name == "Moss" -%}<strong>{{ name }}</strong>{%- else -%}{{ name }}{%- endif -%}
+      {%- endfor -%}
+   </span>
+   <span class="venue">{{ item.venue }}</span>
+   {%- if item.honour %}<span class="honour">&#9733; {{ item.honour }}</span>{% endif %}
+   {%- if item.award %}<span class="award">&#9733; {{ item.award }}</span>{% endif %}
+   <span class="links">
+      {%- if item.pdf %}<a href="{{ item.pdf | relative_url }}">PDF</a>{% endif -%}
+      {%- if item.arxiv %}<a href="{{ item.arxiv }}" rel="noopener">arXiv</a>{% endif -%}
+      {%- if item.code %}<a href="{{ item.code }}" rel="noopener">Code</a>{% endif -%}
+   </span>
+</div>

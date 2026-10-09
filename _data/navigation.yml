@@ -1,10 +1,10 @@
-# main links links
+# Top navigation strip. `url` may be a site path or an external link.
 main:
+  - title: "Home"
+    url: /#top
+  - title: "Team"
+    url: /#team
   - title: "Publications"
-    url: /publications/
-
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "Presentations"
-  #   url: /talks/
+    url: /#publications
+  - title: "Scholar"
+    url: https://scholar.google.com/citations?user=m00SvLMAAAAJ&hl=en

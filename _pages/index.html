@@ -1,0 +1,167 @@
+---
+layout: default
+permalink: /
+title: null
+description: >-
+  Mathematical AI for Decision and Discovery — Henry Moss's group at Lancaster
+  University. Gaussian processes, Bayesian optimisation and experimental design.
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<div class="frontPage" id="top">
+<div class="document">
+
+   <div class="intro">
+      <div class="headshot">
+         <img src="{{ '/images/henry-presenting.jpg' | relative_url }}" alt="Henry Moss speaking at a MARS event" width="200" height="200">
+      </div>
+
+      <div class="about box">
+         <a class="anchor" id="about"></a>
+         <div class="title">About</div>
+         <div class="content">
+            <p>I am <a href="{{ site.author.lancaster }}">Henry Moss</a>, an Associate Professor (UK Reader) in Mathematics and
+            AI in the <a href="https://www.lancaster.ac.uk/maths/">School of Mathematical Sciences</a>
+            at <a href="https://www.lancaster.ac.uk">Lancaster University</a>, where I hold a
+            <strong>UKRI Future Leaders Fellowship</strong> and lead a team working on
+            <strong>Mathematical AI for Decision and Discovery</strong>. I am part of
+            <a href="https://www.lancaster.ac.uk/mathematics-for-ai-in-real-world-systems/">MARS</a>,
+            Lancaster's centre for the mathematics of AI in real-world
+            systems.</p>
+
+            <p>AI has dramatically changed how scientists approach experimentation, but there remains
+            a need for smarter models to accelerate the pace of innovation &mdash; particularly where
+            experiments are technically and financially costly. We have reached a point where the
+            classical mathematical principles of experimental design can no longer keep pace with
+            modern science.</p>
+
+            <p>The aim of the Mathematical AI for Decision and Discovery (MADD) Group is to work closely with industry partners to remove 
+            innovation bottlenecks
+            in areas such as drug discovery and sustainable engineering. We are experts in probabilistic machine learning, generative modelling, Gaussian processes,
+            Bayesian optimisation, active learning and experimental design.
+
+            <p>Our work has been recognised at the main machine learning venues: a
+            <strong class="awardHighlight">Best Paper Award at AISTATS 2026</strong>, together with <strong class="awardHighlight">spotlight</strong> at
+            at ICML 2025, an <strong class="awardHighlight">oral</strong> at AISTATS 2023 and  a <strong class="awardHighlight">spotlight</strong> at NeurIPS 2020</p>
+
+            <p>Before Lancaster I was an Assistant Research Professor in
+            <a href="https://www.damtp.cam.ac.uk/">DAMTP</a> at Cambridge, a research scientist at
+            Secondmind, and a machine learning consultant to AstraZeneca. In 2021, I graduated from Lancaster's
+            <a href="https://www.lancaster.ac.uk/stor-i/">STOR-i</a> with a PhD in statistical machine learning, after reading
+            mathematics at Emmanuel College, Cambridge.</p>
+
+
+            <div class="collabList">
+               <div><span class="collabLabel">Industry collaborators from:</span>
+               {% for c in site.data.collaborations.industry %}{{ c }}{% unless forloop.last %} &middot; {% endunless %}{% endfor %}</div>
+               <div><span class="collabLabel">Academic collaborators from:</span>
+               {% for c in site.data.collaborations.universities %}{{ c }}{% unless forloop.last %} &middot; {% endunless %}{% endfor %}</div>
+            </div>
+
+            <p style="margin-bottom:0">You can reach me at {% include email.html %}.</p>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="announcement">
+      <div class="announcementTitle">Available positions {% include email.html text="(Get in touch)" %}</div>
+      <strong>Postdoctoral positions are available.</strong> These are four-year posts with a
+      generous travel budget.<br>
+      <strong>We have a visiting researcher fund</strong> for PhDs, Postdocs and other researchers working in this area and
+      would like to spend time in the group.
+   </div>
+
+   <a class="anchor" id="publications"></a>
+   <div class="box">
+      <div class="title">Publications</div>
+      <div class="content">
+         <p style="margin-top:0;font-size:14px">Also on
+         <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+
+         {%- comment -%}
+         Anything flagged `under_review: true` in _data/publications.yml is
+         pulled out into its own block here; everything else is grouped by its
+         `year`, newest first. A group that ends up empty prints nothing.
+
+         This deliberately sticks to stock Liquid filters (map/uniq/sort/
+         reverse/strip) rather than Jekyll's group_by and where_exp, because
+         tools/preview.rb renders with the plain liquid gem, where Jekyll's
+         filters do not exist and silently pass their input straight through.
+         {%- endcomment -%}
+
+         {%- capture reviewBlocks -%}
+            {%- for item in site.data.publications -%}
+               {%- if item.under_review -%}{%- include paper-block.html item=item -%}{%- endif -%}
+            {%- endfor -%}
+         {%- endcapture -%}
+         {%- assign reviewBlocks = reviewBlocks | strip -%}
+         {%- if reviewBlocks != "" %}
+         <div class="pubYear">Preprints</div>
+         <div class="paperSet">{{ reviewBlocks }}</div>
+         {%- endif -%}
+
+         {%- assign years = site.data.publications | map: "year" | uniq | sort | reverse -%}
+         {%- for y in years -%}
+            {%- capture yearBlocks -%}
+               {%- for item in site.data.publications -%}
+                  {%- unless item.under_review -%}
+                     {%- if item.year == y -%}{%- include paper-block.html item=item -%}{%- endif -%}
+                  {%- endunless -%}
+               {%- endfor -%}
+            {%- endcapture -%}
+            {%- assign yearBlocks = yearBlocks | strip -%}
+            {%- if yearBlocks != "" %}
+         <div class="pubYear">{{ y }}</div>
+         <div class="paperSet">{{ yearBlocks }}</div>
+            {%- endif -%}
+         {%- endfor -%}
+      </div>
+   </div>
+
+   <a class="anchor" id="team"></a>
+   <div class="box">
+      <div class="title">Team</div>
+      <div class="content">
+         <div class="peopleSet">
+            {%- for p in site.data.people.lead %}
+            <div class="personBlock">
+               <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
+               <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+               <span class="personRole">{{ p.role }}</span>
+               {%- if p.where %}<span class="personWhere">{{ p.where }}</span>{% endif %}
+            </div>
+            {%- endfor %}
+            {%- for p in site.data.people.members %}
+            <div class="personBlock">
+               <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
+               <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+               <span class="personRole">{{ p.role }}</span>
+               {%- if p.where %}<span class="personWhere">{{ p.where }}</span>{% endif %}
+            </div>
+            {%- endfor %}
+         </div>
+      </div>
+   </div>
+
+   <a class="anchor" id="visitors"></a>
+   <div class="box">
+      <div class="title">Visitors</div>
+      <div class="content">
+         <div class="peopleSet">
+            {%- for p in site.data.people.visitors %}
+            <div class="personBlock">
+               <span class="portrait"><img src="{{ p.image | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></span>
+               <span class="personName">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+               <span class="personRole">{{ p.role }}</span>
+               {%- if p.where %}<span class="personWhere">{{ p.where }}</span>{% endif %}
+            </div>
+            {%- endfor %}
+         </div>
+      </div>
+   </div>
+
+</div>
+</div>

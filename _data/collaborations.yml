@@ -1,0 +1,53 @@
+# Organisations we have co-authored papers with, rendered in the About panel.
+#
+# Taken from the author/affiliation blocks on the first page of each paper in
+# publications.yml, plus the UKAEA and Quantum Motion entries from the CV's
+# under-review list. Affiliations are as printed on the paper, so some people
+# have since moved.
+
+# Anyone not at a university: companies, national labs and research institutes.
+industry:
+  - "Secondmind"                 # GIBBON, IPA, PF²ES, Trieste, quantile, dual GPs, heat kernels
+  - "Microsoft Research"         # BOSS and GIBBON — González
+  - "Amazon"                     # BOFFIN TTS — Amazon Research Cambridge
+  - "AstraZeneca"                # Big Batch Active Learning — Ober, Diethe
+  - "Boeing"                     # Linear Combinations of Latents — Boeing AI / Commercial Airplanes
+  - "BigHat BioSciences"              
+  - "Genentech"                  # GAUCHE — Stanton
+  - "Evonik Industries"          # GAUCHE — Dürholt
+  - "MediaTek Research"          # Scalable Thompson Sampling — Vakili
+  - "Reaction Engines"           # heat exchanger penalisation — Zulawski, Newman
+  - "Quantum Motion"             # RF-Squad (under review)
+  - "UK Atomic Energy Authority" # state-preservation constraints (under review)
+  - "Monumo"                      # state-preservation constraints (under review)
+  - "Instadeep"                      # state-preservation constraints (under review)
+
+
+# Universities and research institutes, shown as the second row of the About panel.
+universities:
+  - "Cambridge"
+  - "Oxford"
+  - "Imperial College London"
+  - "University College London"
+  - "King's College London"
+  - "Bristol"
+  - "Edinburgh"
+  - "Birmingham"
+  - "ETH Zürich"
+  - "EPFL"
+  - "Tübingen"
+  - "Bern"
+  - "Aarhus"
+  - "Aalto"
+  - "Ghent"
+  - "Copenhagen"
+  - "Karolinska Institutet"
+  - "IST Austria"
+  - "Stanford"
+  - "Cornell"
+  - "Pennsylvania"
+  - "Washington State"
+  - "British Columbia"
+  - "New South Wales"
+  - "Western Australia"
+  - "Melbourne"

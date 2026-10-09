@@ -1,0 +1,549 @@
+# ==============================================================================
+#  Publications, newest first. Single source for the list on the home page.
+#
+#  Fields
+#    title      required
+#    authors    required — surnames, in paper order
+#    venue      required — shown in red under the authors
+#    year       required — used for the year groupings
+#    thumbnail  Figure 1 from the paper (/images/figures/), or a drawn stand-in
+#               (/images/thumbs/) where a figure could not be extracted cleanly
+#    pdf        local PDF under /files/
+#    arxiv      arXiv abstract page
+#    link       publisher page
+#    code       repository — shown as a "Code" link under the paper
+#    honour     optional — "Spotlight", "Oral", … shown on its own starred row
+#    award      optional — a prize, shown on its own starred row
+#    under_review  optional — set `under_review: true` and the paper is lifted
+#               out of its year and shown in the "Under review" block at the
+#               top of the list instead. `year` is then unused, but harmless
+#               to leave in place for when the paper is accepted.
+#
+#  The home page groups everything else by `year` on its own, so the year
+#  banner comments below are only a navigation aid while editing this file.
+#
+# ==============================================================================
+
+# ---------------------------------------------------------------------- 2026 --
+
+
+
+
+- title: "Feature Space Adaptation for Effortless Gaussian Process Flows"
+  authors: "Cowperthwaite, Sharrock, Astfalck, Moss"
+  year: 2026
+  thumbnail: /images/figures/FeatureFlowGP.png
+  pdf: /files/papers/scalable_gp_flows.pdf
+  under_review: true
+  arxiv: https://arxiv.org/abs/2610.11459
+
+- title: "Example-driven Parametrisations for Bayesian Shape Optimisation"
+  authors: "Diaz-Aylin, Neighbor, Talwar, Zhang, Moss"
+  year: 2026
+  thumbnail: /images/figures/Shape_BO.png
+  pdf: /files/papers/ShapeBO.pdf
+  under_review: true
+  arxiv: https://arxiv.org/pdf/2610.11984
+
+
+- title: "Bayesian Optimisation under State-Preservation Constraints"
+  authors: "Diaz-Aylin, Gopakuar, Myatra, Moulton, Zanisi, Leslie, Moss"
+  year: 2026
+  thumbnail: /images/figures/fusion_BO.png
+  pdf: /files/papers/Fusion_BO.pdf
+  under_review: true
+  arxiv: https://arxiv.org/pdf/2610.12150
+
+
+
+
+
+
+
+- title: "Conditioning Gaussian Processes on Almost Anything"
+  authors: "Moss, Astfalck, Cowperthwaite, Doumont, Willis, Nemeth, Hennig, Zammit-Mangion"
+  venue: "NeurIPS 2026"
+  year: 2026
+  thumbnail: /images/figures/gp_cond.png
+  pdf: /files/papers/conditioning-gps.pdf
+  arxiv: https://arxiv.org/abs/2605.21041
+
+- title: "Search at the Cost of Sampling: Nearly-Instant Latent Space Bayesian Optimization"
+  authors: "Fan, Doumont, Kalisz, Duckworth, Gardner, Moss, Pleiss"
+  venue: "NeurIPS 2026"
+  year: 2026
+  thumbnail: /images/figures/sampling_search.png
+  pdf: /files/papers/search_at_cost.pdf
+  arxiv: https://arxiv.org/abs/2609.19476
+
+
+- title: "Active Learning for Gaussian Process Regression Under Self-Induced Boltzmann Weights"
+  authors: "Qing, Moss, Sachs"
+  venue: "NeurIPS 2026"
+  year: 2026
+  thumbnail: /images/figures/boltzman.png
+  pdf: /files/papers/boltzmann.pdf
+  arxiv: https://arxiv.org/abs/2605.10654
+
+# - title: "BO-Arena: An Evolving Benchmark for High-Dimensional Bayesian Optimisation"
+#   authors: "Christie, Doumont, Moss, Hennig"
+#   venue: "NeurIPS 2026"
+#   year: 2026
+#   thumbnail: /images/thumbs/bandit.svg
+
+
+- title: "Conditioning Stochastic Processes using Guided Latent Dynamics"
+  authors: "Sharrock, Astfalck, Moss"
+  venue: "NeurIPS 2026 Workshop on AI for Stochastic Dynamics"
+  year: 2026
+  thumbnail: /images/figures/stoch_guided.png
+  pdf: /files/papers/flow_inference-2.pdf
+
+- title: "Scalable Gaussian Process Flows"
+  authors: "Cowperthwaite, Sharrock, Astfalck, Moss"
+  venue: "NeurIPS 2026 Workshop on AI for Stochastic Dynamics"
+  year: 2026
+  thumbnail: /images/figures/stars.png
+  pdf: /files/papers/flowgp_follow_up_neurips_workshop_2026.pdf
+
+
+- title: "How Reliable are Intermediate Rewards for SMC-based Guidance in Masked Discrete Diffusion Models?"
+  authors: "Christie, Ek, Hennig, Moss"
+  venue: "NeurIPS 2026 Workshop on Principles of Generative Modelling"
+  year: 2026
+  thumbnail: /images/figures/masking_probs.png
+  pdf: /files/papers/_PriGM_NeurIPS_2026__How_Reliable_are_Intermediate_Rewards_for_SMC_based_Guidance_in_Masked_Discrete_Diffusion_Models__A_Closed_Form_Analysis.pdf
+
+- title: "C4-Equivariant Flow Matching on Anisotropic Power-Diagram Graphs for Microstructure Generation"
+  authors: "Lipinski, Buze, Moss"
+  venue: "NeurIPS 2026 Workshop on Representations for the Physical Sciences"
+  year: 2026
+  thumbnail: /images/figures/metals2.png
+  pdf: /files/papers/Diffusion_on_APDs___NeurIPS.pdf
+
+
+
+- title: "LatentFlow: A General Framework for Conditioning Stochastic Processes"
+  authors: "Sharrock, Astfalck, Moss"
+  year: 2026
+  thumbnail: /images/figures/latentflow.png
+  pdf: /files/papers/latentflow.pdf
+  arxiv: https://arxiv.org/abs/2607.12922
+  under_review: true
+  arxiv: https://arxiv.org/abs/2610.11549
+
+
+
+- title: "BALLAST: Spatio-Temporal Active Learning of Time-Dependent Vector Fields using Lagrangian Observers"
+  authors: "Zhang, Astfalck, Cripps, Leslie, Moss"
+  venue: "ICML 2026"
+  year: 2026
+  thumbnail: /images/figures/ballast.png
+  pdf: /files/papers/ballast.pdf
+  arxiv: https://arxiv.org/abs/2509.26005
+
+
+
+- title: "How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Foundation Models"
+  authors: "Kalisz, Simons, Sinkovics, Ghenassia, Surana, Moss, Duckworth"
+  venue: "ICML 2026 SPIGM Workshop"
+  year: 2026
+  thumbnail: /images/figures/oracle_budget.png
+  arxiv: https://arxiv.org/pdf/2608.12192
+
+- title: "Advancing the Classification of Supraglacial Lake Winter Behaviours on the Greenland Ice Sheet"
+  authors: "Otto, Miles, Leeson, Maddalena, McMillan, Moss"
+  venue: "Journal of Glaciology, 2026"
+  year: 2026
+  thumbnail: /images/figures/otto_ice.png
+  link: https://doi.org/10.1017/jog.2026.10191
+
+
+- title: "We Still Don't Understand High-Dimensional Bayesian Optimisation"
+  authors: "Doumont, Fan, Maus, Gardner, Moss, Pleiss"
+  venue: "AISTATS 2026"
+  award: "Best Paper Award — top 3 of 2,500 submissions"
+  year: 2026
+  thumbnail: /images/figures/we_still_dont.png
+  pdf: /files/papers/highdim-bo.pdf
+  arxiv: https://arxiv.org/abs/2512.00170
+
+- title: "Modelling Sub-kilometre Surface Wind with Gaussian Processes and Neural Networks"
+  authors: "Zanetta, et al., Moss"
+  venue: "Artificial Intelligence for the Earth Systems, 2026"
+  year: 2026
+  thumbnail: /images/figures/surface_level.png
+  arxiv: https://arxiv.org/pdf/2405.12614
+
+
+- title: "Replacing Tunable Parameters in Weather and Climate Models with State-Dependent Functions using Reinforcement Learning"
+  authors: "Nath, Schemm, Moss, Haynes, Shuckburgh, Webb"
+  venue: "Journal of Advances in Modeling Earth Systems, 2026"
+  year: 2026
+  thumbnail: /images/figures/rl_climate.png
+  pdf: /files/papers/tunable-params.pdf
+  arxiv: https://arxiv.org/abs/2601.04268
+
+
+- title: "Don't Get Your Kroneckers in a Twist: Gaussian Processes over Sub-grids"
+  authors: "Højlund, Lykke-Møller, Moss, Christiansen"
+  year: 2026
+  thumbnail: /images/figures/sub_grids.png
+  pdf: /files/papers/kroneckers.pdf
+  arxiv: https://arxiv.org/abs/2605.08
+  under_review: true
+
+
+# ---------------------------------------------------------------------- 2025 --
+
+
+
+
+
+
+
+
+
+- title: "Omnipresent Yet Overlooked: Heat Kernels in Combinatorial Bayesian Optimization"
+  authors: "Doumont, Picheny, Borovitskiy, Moss"
+  venue: "NeurIPS 2025"
+  year: 2025
+  thumbnail: /images/figures/heat_kernels.png
+  pdf: /files/papers/heat-kernels.pdf
+  arxiv: https://arxiv.org/abs/2510.26633
+
+
+
+
+- title: "GPGreen: Learning Linear Operators with Gaussian Processes"
+  authors: "Cowperthwaite, Moss"
+  venue: "EurIPS 2025 Workshop on Differentiable Systems and Scientific Machine Learning"
+  year: 2025
+  thumbnail: /images/figures/gp_green_workshop.png
+  pdf: /files/papers/gp_green_workshop.pdf
+
+
+
+
+- title: "Enabling Efficient Experimental Design in the Context of High-Dimensional Generative Models"
+  authors: "Willis, Oldroyd, Fozard, Ek, Moss"
+  venue: "EurIPS 2025 Workshop on Machine Learning for Simulations in Biology and Chemistry"
+  year: 2025
+  thumbnail: /images/figures/enabling_efficient.png
+  pdf: /files/papers/enabling_efficient.pdf
+
+
+
+- title: "FedRAIN-Lite: Federated Reinforcement Algorithms for Improving Idealised Numerical Weather and Climate Models"
+  authors: "Nath, Moss, Shuckburgh, Webb"
+  venue: "Eurips 2025 Workshop on AI for Climate and Conservation"
+  year: 2025
+  thumbnail: /images/figures/fed_rain.png
+  arxiv: https://arxiv.org/pdf/2508.14315
+  pdf: /files/papers/fedrain.pdf
+
+
+
+- title: "Reflective Error: A Metric for Assessing Predictive Performance at Extreme Events"
+  authors: "Rouse, Moss, Hosking, McRobie, Shuckburgh"
+  venue: "Environmental Data Science, 2025"
+  year: 2025
+  thumbnail: /images/figures/reflective_error.png
+  link: https://doi.org/10.1017/eds.2025.16 
+
+
+
+
+- title: "Linear Combinations of Latents in Diffusion Models: Interpolation and Beyond"
+  authors: "Bodin, Stere, Margineantu, Ek, Moss"
+  venue: "ICLR 2025"
+  year: 2025
+  thumbnail: /images/figures/lol.png
+  pdf: /files/papers/diffusion-latents.pdf
+  arxiv: https://arxiv.org/abs/2408.08558
+
+
+- title: "RF-Squad: A Radiofrequency Simulator for Quantum Dot Arrays"
+  authors: "Murphy, Brlec, Oakes, Peri, Sirringhaus, Moss, Gonzalez-Zalba, Wise"
+  year: 2025
+  thumbnail: /images/figures/rf_squad.png
+  pdf: /files/papers/rf-squad.pdf
+  arxiv: https://arxiv.org/abs/2511.11504
+  under_review: true
+
+
+
+- title: "Dynamic Gaussian Processes and the Vanilla-SPDE Exchange"
+  authors: "Zhang, Astfalck, Cripps, Leslie, Moss"
+  year: 2026
+  thumbnail: /images/figures/vase.png
+  pdf: /files/papers/dynamic-spde.pdf
+  under_review: true
+  arxiv: https://arxiv.org/abs/2606.31063
+
+
+
+
+
+
+- title: "Return of the Latent Space COWBOYS"
+  authors: "Moss, Ober, Diethe"
+  venue: "ICML 2025"
+  honour: "Spotlight"
+  year: 2025
+  thumbnail: /images/figures/cowboys.png
+  pdf: /files/papers/cowboys.pdf
+  arxiv: https://arxiv.org/abs/2507.03910
+
+- title: "Integration-free Kernels for Equivariant Gaussian Process Modelling"
+  authors: "Steinert, Ginsbourger, Moss"
+  venue: "ICML 2025"
+  year: 2025
+  thumbnail: /images/figures/equivariant.png
+  pdf: /files/papers/steinert25a.pdf
+  link: https://proceedings.mlr.press/v267/steinert25a.html
+
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------- 2024 --
+
+
+
+- title: "Big Batch Bayesian Active Learning by Considering Predictive Probabilities"
+  authors: "Ober, Power, Diethe, Moss"
+  venue: "NeurIPS 2024 Workshop on Bayesian Deep Learning and Uncertainty Quantification"
+  year: 2024
+  thumbnail: /images/figures/BBB.png
+  pdf: /files/papers/bigbatch.pdf
+  arxiv: https://arxiv.org/abs/2501.08223
+
+- title: "Trieste: Efficiently Exploring the Depths of Black-box Functions with TensorFlow"
+  authors: "Picheny, Berkeley, Moss, Stojić, Granta, Ober, Artemev, et al."
+  venue: "NeurIPS 2024 Workshop on Bayesian Deep Learning and Uncertainty Quantification"
+  year: 2024
+  thumbnail: /images/figures/ask_tell.png
+  pdf: /files/papers/trieste.pdf
+  arxiv: https://arxiv.org/abs/2302.08436
+  code: https://github.com/secondmind-labs/trieste
+
+
+- title: "Integration-free kernels for equivariant Gaussian fields with application in dipole moment prediction"
+  authors: "Steinert, Ginsbourger, Moss"
+  venue: "NeurIPS 2024 Workshop on Bayesian Deep Learning and Uncertainty Quantification"
+  year: 2024
+  thumbnail: /images/figures/integration_workshop.png
+  pdf: /files/papers/integration_free_kernels.pdf
+
+- title: "BALLAST: Bayesian Active Learning with Look-ahead Amendment for Sea-drifter Trajectories"
+  authors: "Zhang, Moss, Astfalck, Cripps, Leslie"
+  venue: "NeurIPS 2024 Workshop on Bayesian Deep Learning and Uncertainty Quantification"
+  year: 2024
+  thumbnail: /images/figures/old_ballast.png
+  pdf: /files/papers/old_ballast.pdf
+
+
+
+- title: "RAIN: Reinforcement Algorithms for Improving Numerical Weather and Climate Models"
+  authors: "Nath, Moss, Shuckburgh, Webb"
+  venue: "NeurIPS 2024 Workshop on Tackling Climate Change with Machine Learning"
+  year: 2024
+  thumbnail: /images/figures/rain.png
+  arxiv: https://arxiv.org/pdf/2408.16118
+  pdf: /files/papers/2408.16118v3.pdf
+
+
+
+- title: "Bayesian Optimisation for Additive Screening and Yield Improvements — Beyond One-Hot Encoding"
+  authors: "Ranković, Griffiths, Moss, Schwaller"
+  venue: "Digital Discovery, 2024"
+  year: 2024
+  thumbnail: /images/figures/additive_screening.png
+  link: https://doi.org/10.1039/d3dd00096f
+
+
+
+- title: "MONGOOSE: Path-wise Smooth Bayesian Optimisation via Meta-learning"
+  authors: "Yang, Aitchison, Moss"
+  venue: "ICML 2024 SPIGM Workshop"
+  year: 2024
+  thumbnail: /images/figures/mongoose.png
+  pdf: /files/papers/mongoose.pdf
+  arxiv: https://arxiv.org/abs/2302.11533
+
+
+
+
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------- 2023 --
+- title: "GAUCHE: A Library for Gaussian Processes in Chemistry"
+  authors: "Griffiths, Klarner, Moss, Ravuri, Truong, Ranković, Schwaller, et al."
+  venue: "NeurIPS 2023"
+  year: 2023
+  thumbnail: /images/figures/gauche.png
+  pdf: /files/papers/gauche.pdf
+  arxiv: https://arxiv.org/abs/2212.04450
+  code: https://github.com/leojklarner/gauche
+
+- title: "Inducing Point Allocation for Sparse Gaussian Processes in High-throughput Bayesian Optimisation Loops"
+  authors: "Moss, Ober, Picheny"
+  venue: "AISTATS 2023"
+  honour: "Oral"
+  year: 2023
+  thumbnail: /images/figures/IPA.png
+  pdf: /files/papers/ipa.pdf
+  arxiv: https://arxiv.org/abs/2301.10123
+
+- title: "PF²ES: Parallel Feasible Pareto Frontier Entropy Search for Multi-Objective Bayesian Optimization under Unknown Constraints"
+  authors: "Qing, Moss, Couckuyt"
+  venue: "AISTATS 2023"
+  year: 2023
+  thumbnail: /images/figures/pfpfes.png
+  pdf: /files/papers/pf2es.pdf
+  arxiv: https://arxiv.org/abs/2204.05411
+
+# ---------------------------------------------------------------------- 2022 --
+
+- title: "Fantasizing with Dual GPs in Bayesian Optimization and Active Learning"
+  authors: "Chang, Verma, John, Moss, Picheny, Solin"
+  venue: "NeurIPS 2022 GP Workshop"
+  year: 2022
+  thumbnail: /images/figures/fantasy_Gp.png
+  pdf: /files/papers/dual-gps.pdf
+  arxiv: https://arxiv.org/abs/2211.01053
+
+
+
+- title: "Data-driven Discovery of Molecular Photoswitches with Multioutput Gaussian Processes"
+  authors: "Griffiths, Thawani, Jamasb, Moss, Bourached, Jones, McCorkindale, Aldrick"
+  venue: "Chemical Science, 2022"
+  year: 2022
+  thumbnail: /images/figures/photoswitch.png
+  pdf: /files/papers/photoswitches.pdf
+  link: https://doi.org/10.1039/d2sc04306h
+
+- title: "Bayesian Quantile and Expectile Optimisation"
+  authors: "Picheny, Moss, Durrande, Torossian"
+  venue: "UAI 2022"
+  year: 2022
+  thumbnail: /images/figures/quantil_expectile.png
+  pdf: /files/papers/quantile.pdf
+  arxiv: https://arxiv.org/abs/2001.04833
+
+
+- title: "A Penalisation Method for Batch Multi-objective Bayesian Optimisation with Application in Heat-exchanger Design"
+  authors: "Paleyes, Moss, Picheny"
+  venue: "ICML 2022 RealML Workshop"
+  year: 2022
+  thumbnail: /images/figures/HIPPO.png
+  pdf: /files/papers/penalisation.pdf
+  arxiv: https://arxiv.org/abs/2206.13326
+
+
+- title: "Information-theoretic Inducing Point Placement for High-throughput Bayesian Optimisation"
+  authors: "Moss, Ober,Picheny"
+  venue: "ICML 2022 RealML Workshop"
+  year: 2022
+  thumbnail: /images/figures/IPA_workshop.png
+  pdf: /files/papers/2206.02437v2.pdf
+  arxiv: https://arxiv.org/pdf/2206.02437v2
+
+
+
+# ---------------------------------------------------------------------- 2021 --
+
+- title: "GIBBON: General-purpose Information-based Bayesian OptimisatioN"
+  authors: "Moss, Leslie, González, Rayson"
+  venue: "Journal of Machine Learning Research, 2021"
+  year: 2021
+  thumbnail: /images/figures/GIBBON.png
+  pdf: /files/papers/gibbon.pdf
+  arxiv: https://arxiv.org/abs/2102.03324
+
+- title: "Scalable Thompson Sampling using Sparse Gaussian Process Models"
+  authors: "Vakili, Moss, Artemev, Dutordoir, Picheny"
+  venue: "NeurIPS 2021"
+  year: 2021
+  thumbnail: /images/figures/scalableTS.png
+  pdf: /files/papers/sgpts.pdf
+  arxiv: https://arxiv.org/abs/2006.05356
+
+
+
+
+
+# ---------------------------------------------------------------------- 2020 --
+
+- title: "BOSS: Bayesian Optimisation over String Spaces"
+  authors: "Moss, Beck, Leslie, González, Rayson"
+  venue: "NeurIPS 2020"
+  honour: "Spotlight"
+  year: 2020
+  thumbnail: /images/figures/BOSS.png
+  pdf: /files/papers/boss.pdf
+  arxiv: https://arxiv.org/abs/2010.00979
+
+- title: "MUMBO: MUlti-task Max-value Bayesian Optimisation"
+  authors: "Moss, Leslie, Rayson"
+  venue: "ECML-PKDD 2020"
+  year: 2020
+  thumbnail: /images/figures/MUMBO.png
+  pdf: /files/papers/mumbo.pdf
+  arxiv: https://arxiv.org/abs/2006.12093
+
+- title: "BOFFIN TTS: Few-shot Speaker Adaptation by Bayesian Optimisation"
+  authors: "Moss, Aggarwal, Prateek, González, Barra-Chicote"
+  venue: "ICASSP 2020"
+  year: 2020
+  thumbnail: /images/figures/BOFFIN.png
+  pdf: /files/papers/boffin.pdf
+  arxiv: https://arxiv.org/abs/2002.01953
+
+- title: "Gaussian Process Molecule Property Prediction with FlowMO"
+  authors: "Moss, Griffiths"
+  venue: "NeurIPS 2020 ML4Molecules Workshop"
+  honour: "Selected talk"
+  year: 2020
+  thumbnail: /images/figures/FLOWMO.png
+  pdf: /files/papers/flowmo.pdf
+  arxiv: https://arxiv.org/abs/2010.01118
+
+- title: "BOSH: Bayesian Optimisation by Sampling Hierarchically"
+  authors: "Moss, Leslie, Rayson"
+  venue: "ICML 2020 RealML Workshop"
+  year: 2020
+  thumbnail: /images/figures/BOSH.png
+  pdf: /files/papers/bosh.pdf
+  arxiv: https://arxiv.org/abs/2007.00939
+
+# ------------------------------------------------------------------- 2019/18 --
+
+- title: "FIESTA: Fast IdEntification of State-of-The-Art Models Using Adaptive Bandit Algorithms"
+  authors: "Moss, Moore, Leslie, Rayson"
+  venue: "ACL 2019"
+  year: 2019
+  thumbnail: /images/figures/FIESTA.png
+  pdf: /files/papers/fiesta.pdf
+  arxiv: https://arxiv.org/abs/1906.12230
+
+- title: "Using J-K-fold Cross Validation to Reduce Variance when Tuning NLP Models"
+  authors: "Moss, Leslie, Rayson"
+  venue: "COLING 2018"
+  honour: "Area chair favourite"
+  year: 2018
+  thumbnail: /images/figures/JK.png
+  pdf: /files/papers/jk.pdf
+  arxiv: https://arxiv.org/abs/1806.07139

@@ -1,31 +1,125 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# henrymoss.github.io
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+**Mathematical AI for Decision and Discovery** — Henry Moss's group in the
+School of Mathematical Sciences, Lancaster University. Built with Jekyll and
+served by GitHub Pages from `master`.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+The site is a single page. Everything on it comes from four data files plus
+`_pages/index.html`; there are no posts and no per-paper pages.
 
-# Instructions
+The group name lives in `_config.yml` as `title`; it is the header wordmark and
+feeds every page title.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Editing the content you'll actually touch
 
-See more info at https://academicpages.github.io/
+Most updates are one-line edits to a data file — no templates involved.
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+| What | Where |
+|---|---|
+| Publications | `_data/publications.yml` |
+| Group members and visitors | `_data/people.yml` |
+| Industry collaborators (About panel) | `_data/collaborations.yml` |
+| Top navigation | `_data/navigation.yml` |
+| About text, announcement strip | `_pages/index.html` |
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+### Adding a publication
 
-# Changelog -- bugfixes and enhancements
+Add an entry at the top of `_data/publications.yml`:
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+```yaml
+- title: "Paper title"
+  authors: "Surname, Surname, Moss"
+  venue: "NeurIPS 2026"
+  year: 2026
+  thumbnail: /images/figures/something.png
+  arxiv: https://arxiv.org/abs/...
+```
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+`title` and `thumbnail` are required. For the link target you need at least one
+of `pdf` (a file under `files/papers/`), `arxiv`, or `link` (publisher page) —
+the thumbnail and title link to the first one present. `code`, `honour` and
+`award` are optional; `honour` renders a red pill (spotlight, oral), `award` a
+darker one (prizes).
+
+Separate authors with `, ` — the template splits on that and bolds `Moss`
+automatically, so don't add any markup to the `authors` string yourself.
+
+The page groups the list by `year` on its own, newest year first, so the year
+banner comments in the file are only an editing aid. To lift a paper out of its
+year and into the **Preprints** block at the top, add:
+
+```yaml
+  under_review: true
+```
+
+That block is hidden entirely while nothing carries the flag.
+
+### Adding a person
+
+Add to `members` (or `visitors`) in `_data/people.yml`. If you have no photo,
+point `image` at a generated initials card in `images/people/`. `topic` is
+recorded in the file but is not currently shown on the team cards.
+
+Photos taken from someone's institutional profile page should only go up once
+that person is happy for theirs to appear here.
+
+## Images
+
+`tools/gen_assets.py` generates the initials cards and the favicon;
+`tools/gen_logo.py` generates the logo lockups and the header mark. Both write
+straight into `images/` and are safe to re-run:
+
+```bash
+python3 tools/gen_assets.py
+python3 tools/gen_logo.py
+```
+
+Replace any generated image with a real one by dropping a file into `images/`
+and updating the path that refers to it. Real photos and real figures are better
+than the placeholders wherever you have them.
+
+Nothing prunes `images/` or `files/` automatically. When you drop a publication
+or swap a thumbnail, delete the orphan by hand — these directories are the
+bulk of the repository.
+
+## Previewing changes before you push
+
+```bash
+python3 tools/serve.py
+```
+
+Then open <http://localhost:8000>. It watches the source files and rebuilds
+within about half a second of a save — edit, refresh, repeat. Ctrl-C to stop,
+and `python3 tools/serve.py 8080` if the port is taken.
+
+If a change breaks the build, it prints the error and keeps serving the last
+good version, so the browser never goes blank.
+
+This needs no bundler and no Jekyll — just Ruby plus three pure-Ruby gems:
+
+```bash
+gem install --user-install liquid kramdown kramdown-parser-gfm
+```
+
+`tools/serve.py` wraps `tools/preview.rb`, which implements only the subset of
+Jekyll this site uses. It is for eyeballing layout and content; GitHub Pages
+still does the authoritative build, and that is where `feed.xml`, `sitemap.xml`
+and the `redirect_from` stubs are generated.
+
+Because `preview.rb` renders with the plain `liquid` gem, `_pages/index.html`
+deliberately sticks to stock Liquid filters rather than Jekyll's `group_by` and
+`where_exp`, which do not exist there and would silently pass their input
+straight through.
+
+### Running real Jekyll instead (optional)
+
+Only worth it if you need to check the generated feed, sitemap or redirects.
+It requires a system package, because several Jekyll dependencies have native
+extensions:
+
+```bash
+sudo apt install ruby-dev build-essential
+gem install --user-install bundler
+bundle install
+bundle exec jekyll serve
+```

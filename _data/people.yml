@@ -1,0 +1,108 @@
+# ==============================================================================
+#  Group members.
+#
+#  `image` is a real photo where we have one, otherwise a generated initials
+#  card. Photos were taken from the subject's own institutional profile page —
+#  check each person is happy for theirs to appear here before publishing.
+#
+#  `where` is the institution shown under the role.
+#  `topic` is kept here but not currently shown on the team cards.
+#
+#  PhD students and the postdoc are taken from the supervision section of
+#  Henry's CV (Sept 2026).
+# ==============================================================================
+
+lead:
+  - name: "Henry Moss"
+    role: "Reader in Mathematics and AI"
+    where: "Lancaster University"
+    topic: "Probabilistic machine learning for scientific discovery"
+    image: /images/henry-headshot.jpg
+    url: https://www.lancaster.ac.uk/maths/people/henry-moss2
+
+members:
+  - name: "Rui-Yang Zhang"
+    role: "PhD student"
+    where: "Lancaster University"
+    topic: "AI-driven drifter placement (STOR-i)"
+    image: /images/people/ruiyang-zhang.jpg
+
+  - name: "Thomas Cowperthwaite"
+    role: "PhD student"
+    where: "University of Cambridge"
+    topic: "Automatic Bayesian climate science: discovering governing equations (AI4ER)"
+    image: /images/people/thomas-cowperthwaite.jpg
+
+  - name: "Michael Dodds"
+    role: "PhD student"
+    where: "University of Cambridge"
+    topic: "ML-guided design for high-throughput optimisation of biologics (AstraZeneca)"
+    image: /images/people/michael-dodds.jpg
+
+  - name: "Gabriel Diaz-Aylwin"
+    role: "PhD student"
+    where: "Lancaster University"
+    topic: "ML-driven design for fusion reactors (UKAEA)"
+    image: /images/people/gabriel-diaz-aylwin.jpg
+
+  - name: "Abiel Talwar"
+    role: "PhD student"
+    where: "Lancaster University"
+    topic: "Guiding scientific discovery with generative AI"
+    image: /images/people/abiel-talwar.jpg
+
+  - name: "Dawid Lipinski"
+    role: "PhD student"
+    where: "Lancaster University"
+    topic: ""
+    image: /images/people/dawid-lipinski.jpg
+
+  - name: "Ranvir Narang"
+    role: "PhD student"
+    where: "Lancaster University"
+    topic: ""
+    image: /images/people/ranvir-narang.jpg
+
+
+# Visiting researchers — shown in their own box on the page.
+visitors:
+  - name: "Thomas Christie"
+    role: "Visiting PhD student"
+    where: "University of Tübingen"
+    topic: "Guidance in discrete diffusion models; benchmarking high-dimensional BO"
+    image: /images/people/thomas-christie.jpg
+
+  - name: "Colin Doumont"
+    role: "Visiting PhD student"
+    where: "University of Tübingen"
+    topic: "Kernels and linear models for high-dimensional Bayesian optimisation"
+    image: /images/people/colin-doumont.jpg
+
+
+# Co-supervised with colleagues elsewhere; add to `members` if you'd rather
+# list them with the group:
+#   Sam Willis (Cambridge, with Carl Henrik Ek) — ML for aerospace engineering
+#   Tara Murphy (Cambridge, with Sirringhaus and Gonzalez-Zalba) — spin qubits
+#   Erik Bodin (Cambridge, postdoc) — ML as an aerospace engineering assistant
+
+# Not currently rendered anywhere — kept in case you want the list back.
+collaborators:
+  - "Lachlan Astfalck"
+  - "Viacheslav Borovitskiy"
+  - "Ivo Couckuyt"
+  - "Tom Diethe"
+  - "Carl Henrik Ek"
+  - "Jacob Gardner"
+  - "Ryan-Rhys Griffiths"
+  - "Philipp Hennig"
+  - "David Leslie"
+  - "Christopher Nemeth"
+  - "Sebastian Ober"
+  - "Victor Picheny"
+  - "Geoff Pleiss"
+  - "Jixiang Qing"
+  - "Philippe Schwaller"
+  - "Louis Sharrock"
+  - "Andrew Zammit-Mangion"
+
+alumni: []

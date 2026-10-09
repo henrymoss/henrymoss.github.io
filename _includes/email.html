@@ -1,0 +1,11 @@
+{%- comment -%}
+Email address, assembled in the browser so the plain text never appears in the
+served HTML. assets/js/email.js decodes it and builds the mailto link.
+
+  {% include email.html %}                     -> shows the address itself
+  {% include email.html text="Get in touch" %} -> shows link text instead
+
+Without JavaScript the <noscript> fallback shows the [at] form, which is still
+readable by a person but not matched by an address-harvesting regex.
+{%- endcomment -%}
+<span class="emailAddr" data-e="{{ site.author.email_b64 }}"{% if include.text %} data-label="{{ include.text | escape }}"{% endif %}><noscript>{{ site.author.email_hint }}</noscript></span>
