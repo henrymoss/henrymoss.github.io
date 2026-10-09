@@ -25,32 +25,18 @@ redirect_from:
             <p>I am <a href="{{ site.author.lancaster }}">Henry Moss</a>, an Associate Professor (UK Reader) in Mathematics and
             AI in the <a href="https://www.lancaster.ac.uk/maths/">School of Mathematical Sciences</a>
             at <a href="https://www.lancaster.ac.uk">Lancaster University</a>, where I hold a
-            <strong>UKRI Future Leaders Fellowship</strong> and lead a team working on
-            <strong>Mathematical AI for Decision and Discovery</strong>. I am part of
+            <strong>UKRI Future Leaders Fellowship</strong> and lead the
+            <strong>Mathematical AI for Decision and Discovery (MADD)</strong> group. I am part of
             <a href="https://www.lancaster.ac.uk/mathematics-for-ai-in-real-world-systems/">MARS</a>,
             Lancaster's centre for the mathematics of AI in real-world
             systems.</p>
 
-            <p>AI has dramatically changed how scientists approach experimentation, but there remains
-            a need for smarter models to accelerate the pace of innovation &mdash; particularly where
-            experiments are technically and financially costly. We have reached a point where the
-            classical mathematical principles of experimental design can no longer keep pace with
-            modern science.</p>
+            <p>We work with industry partners to remove innovation bottlenecks in areas such as drug
+            discovery and sustainable engineering, where experiments are technically and financially
+            costly. Our expertise is in probabilistic machine learning, generative modelling, Gaussian
+            processes, Bayesian optimisation, active learning and experimental design.</p>
 
-            <p>The aim of the Mathematical AI for Decision and Discovery (MADD) Group is to work closely with industry partners to remove 
-            innovation bottlenecks
-            in areas such as drug discovery and sustainable engineering. We are experts in probabilistic machine learning, generative modelling, Gaussian processes,
-            Bayesian optimisation, active learning and experimental design.
 
-            <p>Our work has been recognised at the main machine learning venues: a
-            <strong class="awardHighlight">Best Paper Award at AISTATS 2026</strong>, together with <strong class="awardHighlight">spotlight</strong> at
-            at ICML 2025, an <strong class="awardHighlight">oral</strong> at AISTATS 2023 and  a <strong class="awardHighlight">spotlight</strong> at NeurIPS 2020</p>
-
-            <p>Before Lancaster I was an Assistant Research Professor in
-            <a href="https://www.damtp.cam.ac.uk/">DAMTP</a> at Cambridge, a research scientist at
-            Secondmind, and a machine learning consultant to AstraZeneca. In 2021, I graduated from Lancaster's
-            <a href="https://www.lancaster.ac.uk/stor-i/">STOR-i</a> with a PhD in statistical machine learning, after reading
-            mathematics at Emmanuel College, Cambridge.</p>
 
 
             <div class="collabList">
@@ -60,6 +46,13 @@ redirect_from:
                {% for c in site.data.collaborations.universities %}{{ c }}{% unless forloop.last %} &middot; {% endunless %}{% endfor %}</div>
             </div>
 
+
+            <p>Before Lancaster I was an Assistant Research Professor in
+            DAMTP at Cambridge, a research scientist at
+            Secondmind, and a machine learning consultant to AstraZeneca. In 2021, I graduated from Lancaster's
+            STOR-i with a PhD in statistical machine learning, after reading
+            mathematics at Emmanuel College, Cambridge.</p>
+
             <p style="margin-bottom:0">You can reach me at {% include email.html %}.</p>
          </div>
       </div>
@@ -67,11 +60,14 @@ redirect_from:
    </div>
 
    <div class="announcement">
-      <div class="announcementTitle">Available positions {% include email.html text="(Get in touch)" %}</div>
-      <strong>Postdoctoral positions are available.</strong> These are four-year posts with a
-      generous travel budget.<br>
-      <strong>We have a visiting researcher fund</strong> for PhDs, Postdocs and other researchers working in this area and
-      would like to spend time in the group.
+      <div class="announcementTitle">Available positions</div>
+      <ul>
+         <li><strong>Postdoctoral positions.</strong> Four-year posts with a generous travel
+         budget.</li>
+         <li><strong>A visiting researcher fund</strong> for PhD students, postdocs and other
+         researchers in this area who would like to spend time in the group.</li>
+      </ul>
+      <div class="announcementFoot">Interested? {% include email.html text="Get in touch" %}.</div>
    </div>
 
    <a class="anchor" id="publications"></a>

@@ -11,7 +11,6 @@
    --accent-hover:  #7b6ae8;  /* lighter violet, for hover                 */
    --navy:          #1a1a34;  /* MARS navy - header bar                    */
    --accent-light:  #d1f43d;  /* MARS lime - rules and fills only          */
-   --accent-green:  #4a7c2f;  /* award highlights in the About text        */
    --flag:          #d6212b;  /* spotlights / orals - loud on purpose      */
    --flag-strong:   #a8121a;  /* prizes                                    */
    --accent-pale:   #ecebf8;  /* violet wash - announcement strip          */
@@ -237,11 +236,6 @@ a.anchor {
    color: var(--accent);
 }
 
-.awardHighlight {
-   color: var(--accent-green);
-   font-weight: bold;
-}
-
 /* Announcement strip (recruiting / notices) */
 .announcement {
    background-color: var(--accent-pale);
@@ -252,15 +246,25 @@ a.anchor {
    line-height: 1.5;
 }
 .announcement strong { color: var(--accent); }
+.announcement ul {
+   margin: 0;
+   padding-left: 20px;
+}
+.announcement li { padding-bottom: 3px; }
+.announcement li:last-child { padding-bottom: 0; }
 .announcementTitle {
-   font-size: 11px;
+   font-size: 12px;
    font-weight: bold;
    text-transform: uppercase;
-   letter-spacing: .05em;
+   letter-spacing: .06em;
    color: var(--accent);
    text-decoration: underline;
    text-underline-offset: 3px;
-   padding-bottom: 5px;
+   padding-bottom: 7px;
+}
+.announcementFoot {
+   padding-top: 7px;
+   color: var(--ink-soft);
 }
 
 /* ==========================================================================
