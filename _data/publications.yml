@@ -37,7 +37,20 @@
   year: 2026
   thumbnail: /images/figures/sharpening.png
   pdf: /files/papers/sharpening.pdf
+  arxiv: https://arxiv.org/abs/2610.13653
   under_review: true
+
+
+
+- title: "Spatial Prediction with Guided Diffusion"
+  authors: "Zammit-Mangion, Astfalck, Huser, Nemeth, Moss"
+  year: 2026
+  thumbnail: /images/figures/spatial_diffusion.png
+  pdf: /files/papers/spatial_diffusion.pdf
+  arxiv: https://arxiv.org/pdf/2610.12967
+  under_review: true
+
+
 
 
 
