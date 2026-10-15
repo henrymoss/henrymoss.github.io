@@ -76,6 +76,20 @@
   arxiv: https://arxiv.org/pdf/2610.11984
 
 
+
+- title: "Generative Models as Adaptive Trust Regions for Discrete Bayesian Optimisation"
+  authors: "Dodds, Bodin, Ober, Diethe, Ek, Moss"
+  year: 2026
+  thumbnail: /images/figures/turdbo.png
+  pdf: /files/papers/turdbo.pdf
+  arxiv: https://arxiv.org/abs/2610.16992
+  under_review: true
+
+
+
+
+
+
 - title: "Bayesian Optimisation under State-Preservation Constraints"
   authors: "Diaz-Aylwin, Gopakuar, Myatra, Moulton, Zanisi, Leslie, Moss"
   year: 2026
