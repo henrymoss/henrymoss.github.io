@@ -57,8 +57,6 @@
 
 
 
-
-
 - title: "Feature Space Adaptation for Effortless Gaussian Process Flows"
   authors: "Cowperthwaite, Sharrock, Astfalck, Moss"
   year: 2026
@@ -87,11 +85,24 @@
 
 
 
+- title: "Acquisition Function-guided Generative for Bayesian Optimisation over Discrete Spaces"
+  authors: "Ancilli, Wednenig, Moss, Peharz"
+  year: 2026
+  thumbnail: /images/figures/AFGG.png
+  pdf: /files/papers/AFGG.pdf
+  arxiv: https://arxiv.org/abs/2610.22763
+  under_review: true
+
+
+
+
+
+
 
 
 
 - title: "Bayesian Optimisation under State-Preservation Constraints"
-  authors: "Diaz-Aylwin, Gopakuar, Myatra, Moulton, Zanisi, Leslie, Moss"
+  authors: "Diaz-Aylwin, Gopakumar, Myatra, Moulton, Zanisi, Leslie, Moss"
   year: 2026
   thumbnail: /images/figures/fusion_BO.png
   pdf: /files/papers/Fusion_BO.pdf
@@ -267,7 +278,7 @@
   pdf: /files/papers/_PriGM_NeurIPS_2026__How_Reliable_are_Intermediate_Rewards_for_SMC_based_Guidance_in_Masked_Discrete_Diffusion_Models__A_Closed_Form_Analysis.pdf
 
 - title: "C4-Equivariant Flow Matching on Anisotropic Power-Diagram Graphs for Microstructure Generation"
-  authors: "Lipinski, Buze, Moss"
+  authors: "Lipinski, Qing, Moss"
   venue: "NeurIPS 2026 Workshop on Representations for the Physical Sciences"
   year: 2026
   thumbnail: /images/figures/metals2.png

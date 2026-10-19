@@ -86,30 +86,5 @@ visitors:
     image: /images/people/colin-doumont.jpg
 
 
-# Co-supervised with colleagues elsewhere; add to `members` if you'd rather
-# list them with the group:
-#   Sam Willis (Cambridge, with Carl Henrik Ek) — ML for aerospace engineering
-#   Tara Murphy (Cambridge, with Sirringhaus and Gonzalez-Zalba) — spin qubits
-#   Erik Bodin (Cambridge, postdoc) — ML as an aerospace engineering assistant
-
-# Not currently rendered anywhere — kept in case you want the list back.
-collaborators:
-  - "Lachlan Astfalck"
-  - "Viacheslav Borovitskiy"
-  - "Ivo Couckuyt"
-  - "Tom Diethe"
-  - "Carl Henrik Ek"
-  - "Jacob Gardner"
-  - "Ryan-Rhys Griffiths"
-  - "Philipp Hennig"
-  - "David Leslie"
-  - "Christopher Nemeth"
-  - "Sebastian Ober"
-  - "Victor Picheny"
-  - "Geoff Pleiss"
-  - "Jixiang Qing"
-  - "Philippe Schwaller"
-  - "Louis Sharrock"
-  - "Andrew Zammit-Mangion"
 
 alumni: []
