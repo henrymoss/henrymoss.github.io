@@ -58,11 +58,11 @@ members:
     topic: "Equivariant generative models for materials microstructures"
     image: /images/people/dawid-lipinski.jpg
 
-  # - name: "Sam Willis"
-  #   role: "PhD student"
-  #   where: "University of Cambridge"
-  #   topic: "GenAI for aerospace engineering"
-  #   image: /images/people/sam-willis.jpg
+  - name: "Sam Willis"
+    role: "PhD student"
+    where: "University of Cambridge"
+    topic: "Generative AI for Probabilistic Modelling"
+    image: /images/people/sam-willis.jpg
 
   - name: "Ranvir Narang"
     role: "PhD student"
