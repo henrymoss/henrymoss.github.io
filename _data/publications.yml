@@ -95,6 +95,13 @@
 
 
 
+- title: "Fast Bayesian Optimization Through Linear Models"
+  authors: "Doumont, Moss, Hennig"
+  year: 2026
+  thumbnail: /images/figures/fastBO.png
+  pdf: /files/papers/fastBO.pdf
+  arxiv: https://arxiv.org/pdf/2610.29580
+  under_review: true
 
 
 
