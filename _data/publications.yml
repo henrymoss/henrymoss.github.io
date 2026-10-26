@@ -52,8 +52,13 @@
 
 
 
-
-
+- title: "SABLE: Scalable Affine Bayesian Latent-space Exploration"
+  authors: "Bodin, Kreusser, Fan, Moss, Pleiss, Durrande"
+  year: 2026
+  thumbnail: /images/figures/SABLE.png
+  pdf: /files/papers/SABLE.pdf
+  under_review: true
+  arxiv: https://arxiv.org/pdf/2610.31495v1
 
 
 
