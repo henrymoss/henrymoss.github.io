@@ -328,6 +328,30 @@ a.anchor {
    line-height: 1.35;
    padding: 3px 0;
 }
+/* GitHub repo button under the paper links. The a:link/a:visited colour rule
+   is more specific than a bare class, so the states are named explicitly. */
+.repoLinkRow {
+   max-width: 760px;
+   margin: 12px auto 0 auto;
+}
+.repoLink:link, .repoLink:visited {
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   padding: 6px 14px;
+   border-radius: 6px;
+   background: var(--navy);
+   color: #ffffff;
+   font-size: 13px;
+   line-height: 1.35;
+   transition: background 0.15s ease;
+}
+.repoLink:hover, .repoLink:focus-visible {
+   background: var(--accent);
+   color: #ffffff;
+}
+.repoLink svg { flex: none; }
+.repoLink span { overflow-wrap: anywhere; }
 
 /* ==========================================================================
    Publication / project thumbnail grid
