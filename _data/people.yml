@@ -21,6 +21,12 @@ lead:
     url: https://www.lancaster.ac.uk/maths/people/henry-moss2
 
 members:
+  - name: "Disha Hedge"
+    role: "Senior Research Associate"
+    where: "Lancaster University"
+    topic: "Probabilistic Modelling (ICEDICE)"
+    image: /images/people/Disha_photo.jpg
+
   - name: "Rui-Yang Zhang"
     role: "PhD student"
     where: "Lancaster University"
