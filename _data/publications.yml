@@ -211,12 +211,13 @@
   pdf: /files/papers/boltzmann.pdf
   arxiv: https://arxiv.org/abs/2605.10654
 
-# - title: "BO-Arena: An Evolving Benchmark for High-Dimensional Bayesian Optimisation"
-#   authors: "Christie, Doumont, Moss, Hennig"
-#   venue: "NeurIPS 2026"
-#   year: 2026
-#   thumbnail: /images/thumbs/bandit.svg
-
+- title: "BO-Arena: An Evolving Benchmark for High-Dimensional Bayesian Optimisation"
+  authors: "Christie, Doumont, Moss, Hennig"
+  venue: "NeurIPS 2026"
+  year: 2026
+  thumbnail: /images/thumbs/boarena.svg
+  arxiv: https://arxiv.org/pdf/2611.10198
+  pdf: /files/papers/boarena.pdf
 
 - title: "We Still Don't Understand High-Dimensional Bayesian Optimisation"
   authors: "Doumont, Fan, Maus, Gardner, Moss, Pleiss"
