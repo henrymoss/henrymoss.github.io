@@ -130,6 +130,7 @@
   pdf: /files/papers/latentflow.pdf
   arxiv: https://arxiv.org/abs/2607.12922
   under_review: true
+  code: https://github.com/FlowInference/flow-inference
 
 
 - title: "Sample-Efficient Optimisation over the Outputs of Generative Models"
@@ -193,6 +194,7 @@
   thumbnail: /images/figures/gp_cond.png
   pdf: /files/papers/conditioning-gps.pdf
   arxiv: https://arxiv.org/abs/2605.21041
+  code: https://github.com/FlowInference/flow-inference
 
 - title: "Search at the Cost of Sampling: Nearly-Instant Latent Space Bayesian Optimization"
   authors: "Fan, Doumont, Kalisz, Duckworth, Gardner, Moss, Pleiss"
@@ -215,9 +217,11 @@
   authors: "Christie, Doumont, Moss, Hennig"
   venue: "NeurIPS 2026"
   year: 2026
-  thumbnail: /images/thumbs/boarena.svg
+  thumbnail: /images/thumbs/boarena.png
   arxiv: https://arxiv.org/pdf/2611.10198
   pdf: /files/papers/boarena.pdf
+  code: https://github.com/bo-arena/bo-arena
+
 
 - title: "We Still Don't Understand High-Dimensional Bayesian Optimisation"
   authors: "Doumont, Fan, Maus, Gardner, Moss, Pleiss"
@@ -274,6 +278,7 @@
   year: 2026
   thumbnail: /images/figures/stoch_guided.png
   pdf: /files/papers/flow_inference-2.pdf
+  code: https://github.com/FlowInference/flow-inference
 
 - title: "Scalable Gaussian Process Flows"
   authors: "Cowperthwaite, Sharrock, Astfalck, Moss"
@@ -281,7 +286,7 @@
   year: 2026
   thumbnail: /images/figures/stars.png
   pdf: /files/papers/flowgp_follow_up_neurips_workshop_2026.pdf
-
+  code: https://github.com/FlowInference/flow-inference
 
 - title: "How Reliable are Intermediate Rewards for SMC-based Guidance in Masked Discrete Diffusion Models?"
   authors: "Christie, Ek, Hennig, Moss"
