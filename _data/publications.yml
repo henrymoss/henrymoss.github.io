@@ -217,7 +217,7 @@
   authors: "Christie, Doumont, Moss, Hennig"
   venue: "NeurIPS 2026"
   year: 2026
-  thumbnail: /images/thumbs/boarena.png
+  thumbnail: /images/figures/boarena.png
   arxiv: https://arxiv.org/pdf/2611.10198
   pdf: /files/papers/boarena.pdf
   code: https://github.com/bo-arena/bo-arena
